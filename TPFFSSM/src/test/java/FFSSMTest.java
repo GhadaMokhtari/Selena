@@ -33,7 +33,9 @@ public class FFSSMTest {
     Licence l, l2;
     Plongeur pl,pl2;
     Embauche e;
-
+/*
+ Moi Mohamet KONE j'ai cloné le projet de Ghada   
+ */
 
    @Before
     public void setUp() {
@@ -152,6 +154,14 @@ public class FFSSMTest {
      public void testNouvelleEmbauche(){
         m.nouvelleEmbauche(leClub, c8);
     }
+     
+     @Test
+     public void testEmployeur(){
+         
+        m.nouvelleEmbauche(leClub, c8);
+        assertSame(leClub,m.employeur());
+    }
+
 
     @Test
     public void testListeEmplois(){
